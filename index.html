@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive UPSC Civil Services Exam preparation app with study planner, current affairs, mock tests, notes, syllabus tracker, and more.">
+    <meta name="keywords" content="UPSC, IAS, Civil Services, UPSC Preparation, Current Affairs, Mock Tests, Study Planner">
+    <meta name="author" content="UPSC Super App">
+    <title>UPSC Super App - Your Complete Civil Services Preparation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span style="font-size: 1.5rem;">☰</span>
+    </button>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="app-logo">🎯 UPSC SuperApp</h1>
+                <p class="app-tagline">Excel. Achieve. Serve.</p>
+            </div>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-section="dashboard">
+                            <span class="nav-icon">📊</span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="study-planner">
+                            <span class="nav-icon">📅</span>
+                            <span>Study Planner</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="current-affairs">
+                            <span class="nav-icon">📰</span>
+                            <span>Current Affairs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="pyq">
+                            <span class="nav-icon">📚</span>
+                            <span>Previous Year Q's</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="mock-tests">
+                            <span class="nav-icon">📝</span>
+                            <span>Mock Tests</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="notes">
+                            <span class="nav-icon">📖</span>
+                            <span>Notes & Revision</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="syllabus">
+                            <span class="nav-icon">✅</span>
+                            <span>Syllabus Tracker</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="answer-writing">
+                            <span class="nav-icon">✍️</span>
+                            <span>Answer Writing</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="analytics">
+                            <span class="nav-icon">📈</span>
+                            <span>Study Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="pomodoro">
+                            <span class="nav-icon">⏱️</span>
+                            <span>Pomodoro Timer</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="resources">
+                            <span class="nav-icon">🔗</span>
+                            <span>Resources Library</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="optional">
+                            <span class="nav-icon">📗</span>
+                            <span>Optional Subjects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="interview">
+                            <span class="nav-icon">🗣️</span>
+                            <span>Interview Prep</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="motivation">
+                            <span class="nav-icon">💪</span>
+                            <span>Motivation Hub</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-section="settings">
+                            <span class="nav-icon">⚙️</span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="mainContent">
+            <!-- Content sections will be dynamically loaded here -->
+            <div id="contentArea"></div>
+        </main>
+    </div>
+
+    <!-- Modal Template -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Modal Title</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
